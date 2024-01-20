@@ -7,6 +7,25 @@ function colors(color) {
   // Si no es ninguno de esos colores           --> "Color not found".
   // PISTA: utilizar el statement SWITCH.
   // Tu código:
+  var colorIngles = "";
+  switch(color){
+    case "blue":
+      colorIngles = "This is blue";
+      break;
+    case "red":
+      colorIngles = "This is red";
+      break;
+    case "green":
+      colorIngles = "This is green";
+      break;
+    case "orange":
+      colorIngles = "This is orange";
+      break;
+    default:
+      colorIngles = "Color not found";
+      break;
+  }
+  return colorIngles;
 }
 
 module.exports = colors;
