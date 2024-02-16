@@ -5,6 +5,15 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+  var res = [];
+  var count = 1;
+  while(count<=10){
+    count++;
+    if(count===5) continue;
+    num+=2;
+    res.push(num);
+  }
+  return res;
 }
 
 module.exports = continueStatement;
